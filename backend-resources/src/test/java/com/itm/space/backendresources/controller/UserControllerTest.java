@@ -43,8 +43,8 @@ class UserControllerTest {
     @WithMockUser(roles = "MODERATOR")
     public void createUserTest() throws Exception {
         // Given
-        UserRequest userRequest = new UserRequest("CatUserr", "catr.doe@example.com", "testr",
-                "Catr", "Cattinr");
+        UserRequest userRequest = new UserRequest("CatUser", "cat.doe@example.com", "test",
+                "Cat", "Cattin");
         // When
         mockMvc.perform(MockMvcRequestBuilders.post("/api/users")
                         .contentType(MediaType.APPLICATION_JSON)
